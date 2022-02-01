@@ -4,7 +4,7 @@
 
 This repository is the official implementation of [Distributional Gaussian Process Layers for Out-of-Distribution Detection](https://link.springer.com/chapter/10.1007/978-3-030-78191-0_32). 
 
->📋  ![Schematic of DistGP Layer](schematic_dist_gp_activation.pdf)
+>📋  ![Schematic of DistGP Layer](schematic_dist_gp_layer.png)
 
 >📋  ![Segmentation Architecture](segmentation_network.png)
 
