@@ -23,11 +23,11 @@ To train the model in the paper, run this command:
 /vol/biomedic2/sgp15/anaconda3/bin/python3 Brain_Seg.py --num_layers=4 --dim_filter=5 --dim_layers=2 --num_inducing=250 --num_iterations=50001 --dim_convolutionally_warped_gp=12 --path_input_scans=$path_input_scans --path_output_scans=$path_output_scans --path_example_scan=$path_example_scan --dataset_name=$dataset_name --dim_output=$dim_output
 ```
 
->📋  The above command line function start training the DistGP Seg model provided a dataset to segment. The following parameters have to be specified by the user:
-> $path_input_scans : absolute path of folder containing scans that are to be segmented
-> $path_output_scans : absolute path of folder containing manually segmented scans
-> $path_example_scan : absolute path of a random input scan from your dataset
-> $dataset_name : name of your dataset
+>📋  The above command line function start training the DistGP Seg model provided a dataset to segment. The following parameters have to be specified by the user:<br/>
+> $path_input_scans : absolute path of folder containing scans that are to be segmented<br/>
+> $path_output_scans : absolute path of folder containing manually segmented scans<br/>
+> $path_example_scan : absolute path of a random input scan from your dataset<br/>
+> $dataset_name : name of your dataset<br/>
 > $dim_output : number of segmentation classes
 
 ## Citing this work
