@@ -20,8 +20,7 @@ pip install tensorflow-gpu
 To train the model in the paper, run this command:
 
 ```train
-python3 full_training_script.py --num_encoding_layers=2 --num_filters=64 --num_subjects=2 --num_voxels_per_subject=2 --location_metadata=$absolute_path_of_metadata_for_dataset --dirpath_gm=$absolute_path_of_directory_of_spm12_processed_gray_matter_nifti_files
---dirpath_wm=$absolute_path_of_directory_of_spm12_processed_white_matter_nifti_files --dataset_name=$dataset_name
+/vol/biomedic2/sgp15/anaconda3/bin/python3 Brain_Seg.py --num_layers=4 --dim_filter=5 --dim_layers=2 --num_inducing=250 --num_iterations=50001 --dim_convolutionally_warped_gp=12
 ```
 
 >📋  The above command line function start training the U-Net model provided a dataset that already went through spm12's Dartel pipeline. One can get the folder with gm and wm nifti files by using  batched_spm12_dartel(img_dir, name_of_dataset, size_batch) function inside dartel_pipeline.py. We mention that the training process is quite lengthy (around 3 weeks on a GPU) if one wants the best possible performance.
