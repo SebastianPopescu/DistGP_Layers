@@ -2,21 +2,19 @@
 
 # A U-Net model for Local Brain Age
 
-This repository is the official implementation of [A U-Net model for Local Brain Age](https://www.biorxiv.org/content/10.1101/2021.01.26.428243v1). 
+This repository is the official implementation of [Distributional Gaussian Process Layers for Out-of-Distribution Detection](https://link.springer.com/chapter/10.1007/978-3-030-78191-0_32). 
 
->📋  ![U-Net Architecture for Local Brain Age Prediction](unet_se_architecture.png)
+>📋  ![Schematic of DistGP Layer](schematic_dist_gp_activation.pdf)
+
+>📋  ![Segmentation Architecture](segmentation_network.png)
 
 ## Requirements
 
 To install requirements:
 
 ```setup
-pip install tensorflow-gpu==1.15.0
-pip install nibabel
+pip install tensorflow-gpu
 ```
-
->📋  One also needs to install [spm12](https://www.fil.ion.ucl.ac.uk/spm/software/spm12/), besides CUDA 10.1 AND cuDNN 7.6.5 to enable GPU capabilities for Tensorflow
-
 ## Training
 
 To train the model in the paper, run this command:
@@ -51,13 +49,27 @@ The pre-trained model can be downloaded [here](https://drive.google.com/drive/fo
 >📋 If you use these tools or datasets in your publications, please consider citing the accompanying paper with a BibTeX entry similar to the following:
 
 ```
-@article{popescu2021u,
-  title={A U-Net model of local brain-age},
-  author={Popescu, Sebastian Gabriel and Glocker, Ben and Sharp, David J and Cole, James H},
-  journal={bioRxiv},
-  year={2021},
-  publisher={Cold Spring Harbor Laboratory}
+@InProceedings{10.1007/978-3-030-78191-0_32,
+author="Popescu, Sebastian G.
+and Sharp, David J.
+and Cole, James H.
+and Kamnitsas, Konstantinos
+and Glocker, Ben",
+editor="Feragen, Aasa
+and Sommer, Stefan
+and Schnabel, Julia
+and Nielsen, Mads",
+title="Distributional Gaussian Process Layers for Outlier Detection in Image Segmentation",
+booktitle="Information Processing in Medical Imaging",
+year="2021",
+publisher="Springer International Publishing",
+address="Cham",
+pages="415--427",
+abstract="We propose a parameter efficient Bayesian layer for hierarchical convolutional Gaussian Processes that incorporates Gaussian Processes operating in Wasserstein-2 space to reliably propagate uncertainty. This directly replaces convolving Gaussian Processes with a distance-preserving affine operator on distributions. Our experiments on brain tissue-segmentation show that the resulting architecture approaches the performance of well-established deterministic segmentation algorithms (U-Net), which has never been achieved with previous hierarchical Gaussian Processes. Moreover, by applying the same segmentation model to out-of-distribution data (i.e., images with pathology such as brain tumors), we show that our uncertainty estimates result in out-of-distribution detection that outperforms the capabilities of previous Bayesian networks and reconstruction-based approaches that learn normative distributions.",
+isbn="978-3-030-78191-0"
 }
+
+
 
 ```
 
