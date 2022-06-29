@@ -1,8 +1,8 @@
 # Under construction
 
->📋  Accompanying code for "A U-Net model for Local Brain Age"
+>📋  Accompanying code for "Distributional Gaussian Process Layers for Outlier Detection in Image Segmentation"
 
-# A U-Net model for Local Brain Age
+# Distributional Gaussian Process Layers for Outlier Detection in Image Segmentation
 
 This repository is the official implementation of [Distributional Gaussian Process Layers for Out-of-Distribution Detection](https://link.springer.com/chapter/10.1007/978-3-030-78191-0_32). 
 
